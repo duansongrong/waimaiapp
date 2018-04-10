@@ -1,25 +1,47 @@
 @font-face {
     font-family: 'iconfont';  /* project id 571168 */
-    src: url('https://at.alicdn.com/t/font_571168_xk5q5okcx3bu766r.eot');
-    src: url('https://at.alicdn.com/t/font_571168_xk5q5okcx3bu766r.eot?#iefix') format('embedded-opentype'),
-    url('https://at.alicdn.com/t/font_571168_xk5q5okcx3bu766r.woff') format('woff'),
-    url('https://at.alicdn.com/t/font_571168_xk5q5okcx3bu766r.ttf') format('truetype'),
-    url('https://at.alicdn.com/t/font_571168_xk5q5okcx3bu766r.svg#iconfont') format('svg');
+    src: url('https://at.alicdn.com/t/font_571168_6h0zihczryynwmi.eot');
+    src: url('https://at.alicdn.com/t/font_571168_6h0zihczryynwmi.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_571168_6h0zihczryynwmi.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_571168_6h0zihczryynwmi.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_571168_6h0zihczryynwmi.svg#iconfont') format('svg');
 }
-#header{
+#header,#header2,#header3{
     width: 100%;
     height: 1.4rem;
     position: fixed;
     z-index: 99999999;
     background: #FF8800;
 }
-#header input{
+#header2{
+    height: 2rem;
+}
+#header3{
+    height: 2.05rem;
+}
+#header2 h1{
+    color: #fff;
+    font-size: 0.32rem;
+    width: 3.44rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+}
+#header2 span{
+    font-family: 'iconfont';
+    color: #fff;
+    font-size: 0.3rem;
+    margin-right: 0.1rem;
+}
+#header2 input{
     width: 6.8rem;
     height: 0.73rem;
     background: #fff;
     display: block;
     margin: 0 auto;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
     border-radius: 0.1rem;
     text-align: center;
     font-size: 0.24rem;
@@ -27,14 +49,26 @@
     color:#999;
     border:0;
 }
-#header input:focus{
+#header2 h2{
+    color:#fff;
+    font-size: 0.22rem;
+    margin-left: 10%;
+    margin-top: 0.25rem;
+}
+#header2 input:focus{
     outline: none;
 }
-#main{
+#main,#main2,#main3{
     width: 100%;
     position: absolute;
     top:1.4rem;
     bottom: 1rem;
+}
+#main2{
+    top:2rem;
+}
+#main3{
+    top: 2.05rem;
 }
 .imgbox{
     width: 100%;
@@ -146,14 +180,13 @@
     font-size: 0.26rem;
     color:#787878;
     float: left;
-    margin:0  0.29rem;
+    margin:0  0.37rem;
     line-height: 0.74rem;
 }
 .tuijian_title li span{
     font-family: 'iconfont';
     font-size: 0.1rem;
     margin-left: 0.05rem;
-    color: #fff;
 }
 .tuijian_title li.active{
     color:#3B3B3B;
@@ -291,7 +324,7 @@
     color:#7C7C7C;
     margin-left:-0.1rem;
 }
-#header h2{
+#header h2,#header3 h2{
     font-size: 0.3rem;
     color:#fff;
     margin-top: 0.8rem;
@@ -411,6 +444,11 @@
 .dingdan_xiangqing h1{
     font-size: 0.3rem;
 }
+.dingdan_xiangqing span{
+    font-family: 'iconfont';
+    font-size: 0.24rem;
+    margin-left: 0.1rem;
+}
 .dingdan_xiangqing h2{
     font-size: 0.22rem;
     color:#363636;
@@ -436,7 +474,7 @@
     font-size: 0.26rem;
     margin-top: 0.3rem;
 }
-#header h3{
+#header h3,#header3 h3{
     font-size:0.4rem;
     color:#fff;
     font-family: 'iconfont';
@@ -466,12 +504,17 @@
 }
 .wode_item_right h1{
     font-size: 0.33rem;
+    color:#000;
+}
+.wode_item_right h1 a{
+    color:#000;
 }
 .wode_item_right h2{
      font-size: 0.22rem;
      margin-top: 0.1rem;
  }
 .wode_item_right h3{
+    font-family: 'iconfont';
     font-size: 0.3rem;
     margin-top: -0.65rem;
     float: right;
@@ -506,11 +549,203 @@
     border-bottom: 0;
 }
 .wode_right h2{
-    font-size: 0.26rem;
+    font-family: 'iconfont';
+    font-size: 0.24rem;
     color:#363636;
     float: right;
     margin-right: 0.25rem;
+    line-height: 0.92rem;
 }
 .wode_xiangqing1{
     height: 1.94rem;
+}
+#header .jiantou,#header3 .jiantou{
+    color:#fff;
+    font-family: 'iconfont';
+    font-size: 0.28rem;
+}
+#header span,#header3 span{
+    margin-left: 0.2rem;
+}
+#header .password{
+    font-size: 0.3rem;
+}
+.login_main{
+    background: #f5f5f5;
+}
+#main1{
+    width: 100%;
+    position: absolute;
+    top:1.4rem;
+    bottom:0;
+}
+.phone{
+    width: 100%;
+    background: #fff;
+    height: 1rem;
+    border-bottom: 0.01rem solid #ccc;
+    border-top: 0.01rem solid #ccc;
+    margin-top: 0.26rem;
+    position: relative;
+}
+.houqu_code{
+    width: 2rem;
+    height: 0.79rem;
+    background:#D5D4D2 ;
+    color:#fff;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.79rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    right:0.3rem;
+    border-radius: 0.05rem;
+}
+.phone input{
+    width: 100%;
+    padding-left: 0.3rem;
+    font-size: 0.2rem;
+    height: 0.94rem;
+    border:0;
+    position: absolute;
+    top:0;
+    left:0;
+    line-height: 0.94rem;
+}
+.phone input:focus{
+    outline: none;
+}
+.code{
+    border-top: 0;
+    margin-top:0;
+}
+.login_icon{
+    width: 6.87rem;
+    height: 0.96rem;
+    background: #4FC060;
+    font-size: 0.35rem;
+    color:#fff;
+    margin:0 auto;
+    margin-top: 0.4rem;
+    text-align: center;
+    line-height: 0.96rem;
+    border-radius: 0.05rem;
+}
+.disanfang{
+    width: 100%;
+    height: 0.59rem;
+}
+.login_other{
+    position: absolute;
+    bottom:0.55rem;
+    left:0;
+}
+.login_other_icon img{
+    width: 1.39rem;
+    height: 1.35rem;
+    float: left;
+    margin: 0 0.2rem;
+}
+.phone h1{
+    font-size: 0.3rem;
+    color:#333;
+    line-height: 1.4rem;
+    margin-left: 0.3rem;
+}
+.grren_touxiang{
+    height: 1.4rem;
+}
+.grren_touxiang img{
+    width: 1.12rem;
+    height: 1.12rem;
+    float: right;
+    margin-top: -1.2rem;
+    margin-right: 0.25rem;
+}
+.user{
+    margin-top: 0;
+    border-top: 0;
+    position: relative;
+}
+.user h1{
+    line-height: 1rem;
+}
+.user span{
+    line-height: 1rem;
+    float: right;
+    color:#999999;
+    font-size: 0.24rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0.2rem;
+}
+.bangbing{
+    margin-top: 0.16rem;
+    border-top: 0.01rem solid #ccc;
+}
+.bangbing h1{
+    color:#9B9B9B;
+}
+.user img{
+    width: 0.84rem;
+    height: 0.95rem;
+    margin-left: 0.2rem;
+}
+.user1 span{
+    color:#ff8800;
+}
+.login_icon1{
+    background: #eee;
+    color:salmon;
+    margin-bottom: 0.15rem;
+}
+.header_menu{
+    width: 100%;
+    height: 0.85rem;
+    margin-top: 0.07rem;
+}
+.header_menu_item{
+    width: 1.44rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.26rem;
+    float: left;
+    margin-right: 0.1rem;
+}
+.header_menu_item.active{
+    border-bottom: 0.04rem solid #fff;
+    height: 0.81rem;
+    color:#fff;
+}
+.header_menu_item1{
+    width: 0.8rem;
+}
+.header_menu_item1 span{
+    color:#fff;
+    text-align: center;
+    line-height: 0.85rem;
+    font-family: 'iconfont';
+}
+.fenlei_title h1{
+    font-size: 0.3rem;
+    color:#333;
+    line-height: 0.9rem;
+    margin-left: 0.2rem;
+}
+.fenlei_title h3{
+    color:#828282;
+    font-size: 0.2rem;
+    float: right;
+    margin-top: -0.6rem;
+    margin-right: 0.2rem;
+}
+.fenlei_title h3 span{
+    font-family: 'iconfont';
+    color:#828282;
+    font-size: 0.2rem;
 }
